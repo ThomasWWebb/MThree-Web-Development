@@ -8,7 +8,7 @@ A **style sheet** just refers to a set of CSS style rules and is not necessarily
 
 Be aware of **precedence**; first style rules in external stylesheets are applied in the order that they appeared in the <head> element, then rules in the internal style sheet again in the order that they appear, and finally inline styles. So styles can be overwritten due to this ordering.
 
-**Colours** can be applied through named colours, RGBA values or Hexadecimal values. For RGBA values, rbg(0, 0, 0, 0), the first three values are 0 to 255 and the fourth is alpha channel defining the opacity of the colour. Alpha is between 0 and 1. Using hexadecimal values the colour is expressed as three two digit hex numbers. When these three numbers are identical only the first hex number needs to be defined.
+**Colours** can be applied through named colours, RGBA values or Hexadecimal values. For RGBA values, rbg(0, 0, 0, 0), the first three values are 0 to 255 and the fourth is alpha channel defining the opacity of the colour. Alpha is between 0 and 1. Using hexadecimal values the colour is expressed as three two digit hex numbers. When these three numbers are identical only the first hex number needs to be defined. For colour schemes see: https://www.websitebuilderexpert.com/designing-websites/how-to-choose-color-for-your-website/, http://paletton.com/, https://coolors.co/.
 
 **Images** can be applied to certain attributes/properties. For example *background-image:url("image-address.png")*. A *background-repeat* property can be set to define if a background image repeats and if so, how. Another property (*background-attachment*) defines if the image is anchored or moves when scrolled. All can be denoted in shorthand under the *background* attribute.
 

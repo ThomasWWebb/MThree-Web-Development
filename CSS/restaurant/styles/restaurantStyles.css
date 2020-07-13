@@ -1,0 +1,38 @@
+body {
+    /*background-color: #ADD9F4;*/
+}
+
+.navbar a:hover {
+    font-weight: bold;
+}
+
+.navbar a:visited {
+    color: #e4c3ad; 
+}
+
+#footer {
+    text-align: center;
+    padding:1% 0 1% 0;
+}
+
+#header, #footer {
+    background-color: #a04736;
+    color: white;  
+}
+
+#header {
+    margin-bottom: 0;
+    padding: 3%;
+}
+
+#image-container {
+    padding: 1% 0 1% 0;
+}
+
+#submit {
+    background-color: #a04736;
+    color: white; 
+    border-color: #a04736;
+}
+
+
