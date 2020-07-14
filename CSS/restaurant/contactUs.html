@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
         <title>Contact Us</title>	
         <style>
             #form-container {
@@ -17,7 +18,7 @@
                 }
             }
             
-            #email, #name, #been-to-restaurant, #days-to-contact {
+            #email-label, #name-label, #been-to-restaurant-label, #days-to-contact {
                 font-weight: bold;
             }
 
@@ -33,6 +34,16 @@
             label, legend, #days-to-contact {
                 text-align: right;
             }
+
+            .form-control, textarea {
+                background-color: #FCEFEF;
+            }
+
+            #submit {
+                background-color: #FF8552;
+                color: #39393A; 
+                border-color: #FF8552;
+            }
         </style>
     </head>
     
@@ -40,7 +51,7 @@
         <header class="jumbotron jumbotron-fluid" id="header">
             <div class="container">
                 <h1 class="display-4">Dev Restaurant</h1>
-                <nav id="test" class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-custom">
                     <a class="navbar-brand" href="index.html">Home</a>
                     <a class="navbar-brand" href="menu.html">Menu</a>
                     <a class="navbar-brand" href="contactUs.html">Contact Us</a>
@@ -51,13 +62,13 @@
         <div id="form-container">
             <form form action="submit.html" method="POST">
                 <div class="form-group row">
-                    <label id="name" for="name" class="col-sm-6 col-form-label">Name</label>
+                    <label id="name-label" for="name" class="col-sm-6 col-form-label">Name</label>
                     <div class="col-sm-6">
                         <input type="text" class="form-control" id="name" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label id="email" for="email" class="col-sm-6 col-form-label">Email</label>
+                    <label id="email-label" for="email" class="col-sm-6 col-form-label">Email</label>
                     <div class="col-sm-6">
                         <input type="email" class="form-control" id="email" required>
                     </div>
@@ -87,14 +98,14 @@
                 </div>
                 <fieldset class="form-group" required>
                     <div class="row">
-                    <legend id="been-to-restaurant" class="col-form-label col-sm-6 pt-0">Have you been to the restaurant?</legend>
-                        <div class="col-sm-6">
+                    <legend id="been-to-restaurant-label" class="col-form-label col-sm-6 pt-0">Have you been to the restaurant?</legend>
+                        <div class="col-sm-6" >
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="choice-no" id="choice-no" value="choice-no" required>
+                                <input class="form-check-input" type="radio" name="choice" id="choice-no" value="choice-no" required>
                                 <label class="form-check-label" for="choice-no">No</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="choice-yes" id="choice-yes" value="choice-yes" required>
+                                <input class="form-check-input" type="radio" name="choice" id="choice-yes" value="choice-yes">
                                 <label class="form-check-label" for="choice-yes">Yes</label>
                             </div>
                         </div>
