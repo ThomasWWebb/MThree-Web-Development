@@ -1,20 +1,20 @@
 body {
-    background-color: #39393A;
+    background-color: #50514F;
     color: #FCEFEF;
 }
 
 h1 {
     font-family: 'Quicksand', sans-serif;
-    color: #FF8552;
+    color: white;
 }
 
 .navbar-custom { 
-    background-color: #FF8552; 
+    background-color: #FDB833; 
 } 
 
 .navbar-custom .navbar-brand, 
 .navbar-custom .navbar-text { 
-    color: #297373; 
+    color: #50514F; 
 } 
 
 .navbar a:hover {
@@ -22,7 +22,7 @@ h1 {
 }
 
 .navbar a:visited {
-    color: #39393A; 
+    color: black; 
 }
 
 #footer {
@@ -31,7 +31,7 @@ h1 {
 }
 
 #header, #footer {
-    background-color: #297373;
+    background-color: #ED6A5A;
     color: white;  
 }
 
