@@ -12,15 +12,21 @@
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
         <title>Menu</title>	
         <style>
-            .row {
-                margin-top: 2%;
-                margin-bottom: 2%;
-            }
 
             .card {
                 border-radius: 0;
                 background-color: #EEE5E9;
                 color: #39393A;
+                height: 100%;
+            }
+
+            .card-col {
+                padding-top: 2%;
+            }
+
+            .table-col {
+                padding-top: 2%;
+                padding-bottom: 2%;
             }
 
             .table {
@@ -57,7 +63,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4 card-col">
                     <div class="card text-center shadow">
                         <div class="card-body">
                             <h5 class="card-title">Burger and Fries</h5>
@@ -72,7 +78,7 @@
                           </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4 card-col">
                     <div class="card text-center shadow">
                         <div class="card-body">
                             <h5 class="card-title">Hot Dog and Chips</h5>
@@ -87,7 +93,7 @@
                           </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4 card-col">
                     <div class="card text-center shadow">
                         <div class="card-body">
                             <h5 class="card-title">Sausage and Peppers</h5>
@@ -104,7 +110,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4 card-col">
                     <div class="card text-center shadow">
                         <div class="card-body">
                             <h5 class="card-title">Sandwich and Chips</h5>
@@ -119,7 +125,7 @@
                           </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4 card-col">
                     <div class="card text-center shadow">
                         <div class="card-body">
                             <h5 class="card-title">House Salad</h5>
@@ -134,7 +140,7 @@
                           </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-4 card-col">
                     <div class="card text-center shadow">
                         <div class="card-body">
                             <h5 class="card-title">Sandwich and Fries</h5>
@@ -151,7 +157,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12 table-col">
                     <div class="card shadow">
                         <div class="card-body" id="beverages">
                             <table class="table table-striped">
