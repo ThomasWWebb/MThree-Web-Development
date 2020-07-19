@@ -14,7 +14,7 @@ JS has the usual **Comparison Operators** but also includes strictly equal to (=
 
 **Unary operators** perform operations on single variables, unlike binary operators that operate on two values or variables. *y--;* is an example of a unary operator for subtracting one from variable y and assigning the new value to y.
 
-**Control Flow** is the order in which a program's lines of code are executed. *prompt* produces an input popup and *alert* produces a output popup. *confirm* displays a popup message with an OK and Cancel button that will return true or false respectively. Remember that functions can be used as parameters provided they return suitable values, so prompts or confirms can be used as arguments. 
+**Control Flow** is the order in which a program's lines of code are executed. *prompt* produces an input popup and *alert* produces a output popup. *confirm* displays a popup message with an OK and Cancel button that will return true or false respectively. Remember that functions can be used as parameters provided they return suitable values, so prompts or confirms can be used as arguments. Parameters are variables listed as part of the function definition while arguments are values passed to the function when it is invoked. 
 
 For **random number generation** *Math.random()* can be used which outputs a random number between 0 and 1, including 0 but not 1.
 
