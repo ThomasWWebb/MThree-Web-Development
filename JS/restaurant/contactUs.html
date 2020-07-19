@@ -14,25 +14,33 @@
                 padding: 1% 0 1% 0;
                 
             }
-            @media only screen and (min-width: 480px) {
+            @media only screen and (min-width: 576px) {
                 #form-container {
                     margin-left: 15%;
                 }
+                label, legend, #days-to-contact {
+                    text-align: right;
+                }
+                form {
+                    width: 60%;
+                }
             }
+            @media only screen and (max-width: 575px) {
+                form {
+                    padding: 3%;
+                }
+            }
+
             
             #email-label, #name-label, #been-to-restaurant-label, #days-to-contact {
                 font-weight: bold;
             }
 
-            form {
-                width: 60%;
-            }
+            
             textarea {
                 width: 100%;
             }
-            label, legend, #days-to-contact {
-                text-align: right;
-            }
+            
 
             .form-control, textarea {
                 background-color: #FCEFEF;
@@ -56,6 +64,13 @@
                 padding-top: 2%;
                 padding-bottom: 2%;
                 display: none;
+            }
+
+            .invalid-feedback > .container {
+                background-color: #C31D2B;
+                color: white;
+                padding: 2%;
+                border-radius: .25rem;
             }
         </style>
     </head>
@@ -84,22 +99,34 @@
                 <div class="form-group row">
                     <label id="name-label" for="name" class="col-sm-6 col-form-label">Name</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="name" required>
-                        <div class="invalid-feedback">Please enter your name</div>
+                        <input type="text" class="form-control" id="name">
+                        <div class="invalid-feedback">
+                            <div class="container">
+                                <div>Please enter your name</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label id="email-label" for="email" class="col-sm-6 col-form-label">Email</label>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control" id="email" required>
-                        <div class="invalid-feedback">Please enter a valid email</div>
+                        <input type="email" class="form-control" id="email">
+                        <div class="invalid-feedback">
+                            <div class="container">
+                                <div>Please enter a valid email</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="phone" class="col-sm-6 col-form-label">Phone:</label>
                     <div class="col-sm-6">
                         <input type="tel" class="form-control" id="phone">
-                        <div class="invalid-feedback">Invalid phone number</div>
+                        <div class="invalid-feedback">
+                            <div class="container">
+                                <div>Invalid phone number</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -124,14 +151,18 @@
                     <legend id="been-to-restaurant-label" class="col-form-label col-sm-6 pt-0">Have you been to the restaurant?</legend>
                         <div class="col-sm-6" >
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input custom-radio" type="radio" name="visited-choice" id="choice-no" value="choice-no" required>
+                                <input class="form-check-input custom-radio" type="radio" name="visited-choice" id="choice-no" value="choice-no" >
                                 <label class="form-check-label" for="choice-no">No</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="visited-choice" id="choice-yes" value="choice-yes">
                                 <label class="form-check-label" for="choice-yes">Yes</label>
                             </div>
-                            <div class="invalid-feedback" id="must-select-radio" >Please select an option</div>
+                            <div class="invalid-feedback" id="must-select-radio">
+                                <div class="container">
+                                    <div>Please select an option</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -158,7 +189,11 @@
                         <input class="form-check-input" type="checkbox" id="friday" name="day-choice">
                         <label class="form-check-label" for="friday">F</label>
                     </div>
-                    <div class="invalid-feedback" id="must-select-days" >Please select the best days to contact you</div>
+                    <div class="invalid-feedback" id="must-select-days" >
+                        <div class="container">
+                            <div>Please select the best days to contact you</div>
+                        </div>
+                    </div>
                   </div>
                 </div>
                 <div class="form-group row">
